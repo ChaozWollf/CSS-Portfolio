@@ -1,4 +1,97 @@
-
-header .me{
-    aspect aspect: ratio 0.5em; ;
+:root {
+    --aqua: #99d1d1;
 }
+
+body {}
+
+.header {
+    display: flex;
+    padding-bottom: -10%;
+    background-color: #3d4444;
+
+}
+
+nav {
+
+    padding-top: 10%;
+    max-width: 100%;
+    background-image: linear-gradient(to right, black, blue);
+    display: flex
+}
+
+.h2 {
+    display: inline-block right;
+}
+
+
+
+.sidebar {
+    height: 100%;
+    width: 20%;
+    border-right: blue solid 10px;
+}
+
+.body-text {
+    margin-left: 20%;
+    border-left: blue solid 10px
+}
+
+
+
+.me {
+    display: inline-block;
+    max-width: 8%;
+    max-height:auto;
+}
+
+
+.h1 {
+    background-color: var(--aqua);
+    color: #0c0d0e;
+    max-width: 30%;
+    display: inline-box;
+
+}
+
+.About {
+    padding-left: 125%;
+    color: white;
+    text-align: left;
+
+}
+
+ul {
+    padding-right: 100%;
+    justify-content: flex-;
+    border: red solid, 10px
+}
+
+
+ul li {
+    display: inline;
+    color: var(--aqua);
+}
+
+.nav {
+    display: flexbox;
+    max-height: 100px;
+    margin: 0, auto;
+    background-color: linear-gradient(left, var(--aqua), #3d4444);
+}
+
+h2 {
+    padding-left: 50%;
+    color: aliceblue;
+    display:inline-flex
+}
+
+#AboutMe h3 {
+    font-size: x-large;
+    margin-top: 10000px;
+}
+
+#Work {}
+
+#ContactMe {}
+
+@mediascreen and (max-width: 992px) {}
