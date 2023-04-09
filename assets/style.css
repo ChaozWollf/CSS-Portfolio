@@ -22,8 +22,8 @@ nav {
 
 }
 
-.h1 {
-    background-color: var(--aqua);
+h1 {
+    padding-top: 3.5%;
     color: #0c0d0e;
     text-align: center;
     max-width: 30%;
@@ -31,6 +31,9 @@ nav {
     flex-wrap: wrap;
 }
 
+h1 span {
+    background-color: var(--aqua);
+}
 .h2 {
     display: flex right;
     padding-left: 65%;
@@ -43,14 +46,14 @@ nav {
 .sidebar {
     height: 100%;
     width: 20%;
-    position:absolute;
+    position: absolute;
     border-right: blue solid 10px;
 }
 
 .body-text {
     margin-left: 22%;
-    padding-top:2%;
-    position:relative;
+    padding-top: 2%;
+    position: relative;
     text-align: right;
     flex-wrap: wrap;
 }
@@ -72,8 +75,9 @@ nav {
 }
 
 ul {
-    display: inline-flex;
+    display:inline-flex;
     padding-left: 80%;
+    align-content: end;
     flex-wrap: wrap;
 }
 
@@ -107,11 +111,12 @@ li {
 }
 
 #Work h3 {
-    padding-top:100%;
-    font-size: xx-large;
     
+    font-size: xx-large;
+    padding-top: 100%;
 }
-.Hori{
+
+.Hori {
     max-width: 77%;
 }
 
@@ -120,24 +125,26 @@ li {
 }
 
 @media screen and (max-width: 992px) {
-    .Hori{
+    .Hori {
         max-width: 70%;
     }
-        .me{
+
+    .me {
         max-width: 10%;
-        max height:10%
+        max height: 10%
     }
-    
+
 }
 
 @media screen and (max-width: 768px) {
-    .Hori{
+    .Hori {
         max-width: 58;
     }
-.me{
-    max-width:6%;
-    max-height:6%;
-}
+
+    .me {
+        max-width: 6%;
+        max-height: 6%;
+    }
 }
 
 @media screen and(max-width: 576px) {}
