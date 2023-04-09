@@ -2,21 +2,25 @@
     --aqua: #99d1d1;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {}
 
 .header {
-    display: flex;
+    display: inline-flex;
     padding-bottom: -10%;
     background-color: #3d4444;
 
 }
 
 nav {
-
+    display: flexbox; 
     padding-top: 10%;
-    max-width: 100%;
+    max-width: 110%;
     background-image: linear-gradient(to right, black, blue);
-    display: flex
+
 }
 
 .h2 {
@@ -41,7 +45,7 @@ nav {
 .me {
     display: inline-block;
     max-width: 8%;
-    max-height:auto;
+    max-height: auto;
 }
 
 
@@ -56,37 +60,36 @@ nav {
 .About {
     padding-left: 125%;
     color: white;
-    text-align: left;
+    text-align: right;
 
 }
 
 ul {
+    display: inline-flex;
     padding-right: 100%;
-    justify-content: flex-;
     border: red solid, 10px
 }
 
 
-ul li {
-    display: inline;
+li {
+    text-align: right;
     color: var(--aqua);
 }
 
 .nav {
-    display: flexbox;
+    display: inline-flex;
     max-height: 100px;
     margin: 0, auto;
     background-color: linear-gradient(left, var(--aqua), #3d4444);
 }
 
-h2 {
-    padding-left: 50%;
+.h2 {
+    text-align: right;
     color: aliceblue;
-    display:inline-flex
 }
 
 #AboutMe h3 {
-    font-size: x-large;
+    font-size: xx-large;
     margin-top: 10000px;
 }
 
@@ -94,4 +97,12 @@ h2 {
 
 #ContactMe {}
 
-@mediascreen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and(max-width: 576px) {
+
+}
