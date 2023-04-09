@@ -10,21 +10,29 @@ body {}
 
 .header {
     display: inline-flex;
-    padding-bottom: -10%;
+    padding-bottom:;
     background-color: #3d4444;
-
+    flex-wrap: wrap;
 }
 
 nav {
-    display: flexbox; 
+    display: flexbox;
     padding-top: 10%;
     max-width: 110%;
     background-image: linear-gradient(to right, black, blue);
 
 }
-
+.h1 {
+    background-color: var(--aqua);
+    color: #0c0d0e;
+    text-align: center;
+    max-width: 30%;
+    display: box;
+    flex-wrap: wrap;
+}
 .h2 {
     display: inline-block right;
+    flex-wrap: wrap;
 }
 
 
@@ -37,37 +45,31 @@ nav {
 
 .body-text {
     margin-left: 20%;
-    border-left: blue solid 10px
+    border-left: blue solid 10px;
+    flex-wrap: wrap;
 }
 
 
 
 .me {
-    display: inline-block;
-    max-width: 8%;
+    display: inline;
+    max-width: 10%;
     max-height: auto;
 }
 
-
-.h1 {
-    background-color: var(--aqua);
-    color: #0c0d0e;
-    max-width: 30%;
-    display: inline-box;
-
-}
 
 .About {
     padding-left: 125%;
     color: white;
     text-align: right;
-
+flex-wrap: wrap;
 }
 
 ul {
     display: inline-flex;
-    padding-right: 100%;
-    border: red solid, 10px
+    padding-left: 80%;
+    border: red solid, 10px;
+flex
 }
 
 
@@ -97,12 +99,8 @@ li {
 
 #ContactMe {}
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {}
 
-}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {}
 
-}
-@media screen and(max-width: 576px) {
-
-}
+@media screen and(max-width: 576px) {}
