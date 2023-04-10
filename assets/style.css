@@ -3,9 +3,6 @@
     --blue: blue;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 body {
     display:block;
@@ -77,28 +74,31 @@ h1 span {
 .About, .work, .contact-me {
     color: white;
     text-align: right;
+    
 }
 
 
 ul {
     align-content: end;
     text-align: right;
-    padding-left: 0%;
     flex-wrap: wrap;
     list-style-type:none;
 }
 .navigation{
     display:inline-flex;
     margin-right: 0 auto;
-    align-content: end;
-
+    align-content:end;
+    position: absolute;
+    right: 30px;
 }
 
 li {
     text-align: right;
     color: var(--aqua);
-margin-right: auto;
+    margin-left:24px;
+    margin-right: auto;
 }
+
 
 .nav {
     display: inline-flex;
@@ -133,6 +133,17 @@ margin-right: auto;
     padding-top:2%; 
     border: solid grey 1px
 }
+.placeholder-1{
+    max-width: 35%;
+    padding-left:2%;
+    padding-top: 2%;
+    align-content: right;
+    
+}
+
+
+
+
 #ContactMe {
     margin-top: 100%;
 }
@@ -156,7 +167,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     .Hori {
-        max-width: 58;
+        max-width: 58%;
     }
 
     .me {
