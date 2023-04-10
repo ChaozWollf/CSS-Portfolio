@@ -1,5 +1,6 @@
 :root {
     --aqua: #99d1d1;
+    --blue: blue;
 }
 
 html {
@@ -21,7 +22,7 @@ nav {
     display: flex;
     padding-top: 10%;
     max-width: 110%;
-    background-image: linear-gradient(to right, black, blue);
+    background-image: linear-gradient(to right, black, var(--blue));
 
 }
 
@@ -52,7 +53,7 @@ h1 span {
     text-align: end;
     font-size: 34px;
     position: absolute;
-    border-right: blue solid 10px;
+    border-right: var(--blue) solid 10px;
 }
 
 .body-text {
@@ -63,7 +64,7 @@ h1 span {
     font-size: large;
     flex-wrap: wrap;
 }
-
+ 
 
 
 .me {
@@ -73,18 +74,18 @@ h1 span {
 }
 
 
-.About {
+.About, .work, .contact-me {
     color: white;
     text-align: right;
-    flex-wrap: wrap;
 }
+
 
 ul {
     align-content: end;
     text-align: right;
     padding-left: 0%;
     flex-wrap: wrap;
-     list-style-type:none;
+    list-style-type:none;
 }
 .navigation{
     display:inline-flex;
