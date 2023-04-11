@@ -317,6 +317,7 @@ nav {background-image: linear-gradient(to right, var(--black), orange);
 .sidebar {
     font-size: 16px;
 }
-}
+
 nav {background-image: linear-gradient(to right, var(--black), green);
+}
 }
