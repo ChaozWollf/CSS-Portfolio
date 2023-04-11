@@ -48,7 +48,7 @@ h1 span {
 
 
 .sidebar {
-    height: 230%;
+    height: 350%;
     width: 20%;
     text-align: end;
     font-size: 34px;
@@ -119,7 +119,7 @@ display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
     flex: 1 1 100%;
-    left: 20%;
+    left: 80%;
     bottom: 60%;
     flex-direction: column;
 }
