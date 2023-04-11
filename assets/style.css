@@ -5,8 +5,9 @@
 
 
 body {
-    display:block;
-    
+    display: block;
+    max-height: fit-content;
+
 }
 
 .header {
@@ -28,13 +29,14 @@ h1 {
     color: #0c0d0e;
     text-align: center;
     max-width: 30%;
-    display: box;
+    display: flex;
     flex-wrap: wrap;
 }
 
 h1 span {
     background-color: var(--aqua);
 }
+
 .h2 {
     display: flex right;
     padding-left: 65%;
@@ -45,7 +47,7 @@ h1 span {
 
 
 .sidebar {
-    height: 360%;
+    height: 230%;
     width: 20%;
     text-align: end;
     font-size: 34px;
@@ -54,6 +56,8 @@ h1 span {
 }
 
 .body-text {
+    display: inline-flex;
+    width: 78%;
     margin-left: 22%;
     padding-top: 2%;
     position: relative;
@@ -61,7 +65,35 @@ h1 span {
     font-size: large;
     flex-wrap: wrap;
 }
- 
+
+.body-text2 {
+    display:flex;
+    width: 40%;
+    height: 40%;
+    align-content: space-between;
+
+    padding-top: 2%;
+    position: relative;
+    bottom: 20%;
+    flex-wrap: wrap;
+border:green solid 5px;
+}
+
+.body-text3 {
+    display:flex;
+    width: 40%;
+    height: 40%;
+    padding-left: 5%;
+    position: relative;
+    align-content: right;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1  100%;
+    left:63%;
+    bottom:60%;
+    border:red solid 5px;
+}
+
 
 
 .me {
@@ -71,31 +103,31 @@ h1 span {
 }
 
 
-.About, .work, .contact-me {
+.About,
+.work,
+.contact-me {
     color: white;
     text-align: right;
-    
+
 }
 
 
 ul {
-    align-content: end;
-    text-align: right;
     flex-wrap: wrap;
-    list-style-type:none;
+    list-style-type: none;
 }
-.navigation{
-    display:inline-flex;
-    margin-right: 0 auto;
-    align-content:end;
+
+.navigation {
+    display: inline-flex;
     position: absolute;
+    align-content: end;
     right: 30px;
 }
 
 li {
     text-align: right;
     color: var(--aqua);
-    margin-left:24px;
+    margin-left: 24px;
     margin-right: auto;
 }
 
@@ -118,50 +150,83 @@ li {
     display: flex;
 }
 
-
-#Work h3{  
+#Work h3 {
     padding-top: 100%;
 }
 
+
+#work{
+    display:inline-flex;
+    flex: 1 1 100%
+}
+
+
 .Hori {
-    
-    max-width:77%;
+
+    max-width: 100%;
     padding-top: 2%;
 }
+
 .prework {
-    max-width:35%;
-    padding-top:2%; 
-    border: solid grey 1px
-}
-.placeholder-1{
-    max-width: 35%;
-    padding-left:2%;
+    display: inline-flex;
+    max-width: 100%;
     padding-top: 2%;
-    align-content: right;
-    
+    border: solid grey 1px;
 }
 
+.placeholder-1 {
+    display: inline-flex;
+    max-width: 73%;
+    position: relative;
+    left: 40%;
+    align-content: end;
+border:yellow solid 5px
+}
 
+.placeholder-2 {
+   display:inline-flex;
+    max-width: 100%;
+    position: relative;
+    right: 0%;
+    align-content: start;
+
+}
+
+.placeholder-3 {
+    display:inline-flex;
+    max-width: 100%;
+    padding-bottom: 1%;
+    max-height: 100%;
+    position: relative;
+    left: 40%;
+    align-content: end;
+border: green solid 5px
+}
 
 
 #ContactMe {
     margin-top: 100%;
 }
 
-footer {
-    max-height: 5%;
-}
-
 
 @media screen and (max-width: 992px) {
     .Hori {
-        max-width: 10%;
+        max-width: 80%;
     }
 
     .me {
         max-width: 10%;
         max-height: 10%;
     }
+
+    .prework {}
+
+    .placeholder-1 {}
+
+    .placeholder-2 {}
+
+    .placeholder-3 {}
+
 
 }
 
@@ -180,8 +245,9 @@ footer {
     .Hori {
         max: width 43%;
     }
-.me{
-    max-width: 4.5%;
-    max-height: 4.5%;    
-}
+
+    .me {
+        max-width: 4.5%;
+        max-height: 4.5%;
+    }
 }
