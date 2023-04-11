@@ -17,4 +17,4 @@
     https://chaozwollf.github.io/CSS-Portfolio/
 
     
-![Alt text](assets/images/chaozwollf.github.io_CSS-Portfolio_.png)
+![Alt text](assets/images/_C__Users_lames_bootcamp_class-repo_CSS-Portfolio_index.html%20(2).png)
