@@ -1,6 +1,7 @@
 :root {
     --aqua: #99d1d1;
     --blue: blue;
+    --black:black;
 }
 
 
@@ -20,13 +21,13 @@ nav {
     display: flex;
     padding-top: 10%;
     max-width: 110%;
-    background-image: linear-gradient(to right, black, var(--blue));
+    background-image: linear-gradient(to right, var(--black), var(--blue));
 
 }
 
 h1 {
     padding-top: 3.5%;
-    color: #0c0d0e;
+    color: var(--black);
     text-align: center;
     max-width: 30%;
     display: flex;
@@ -67,31 +68,34 @@ h1 span {
 }
 
 .body-text2 {
-    display:flex;
-    width: 40%;
+    display:inline-flex;
+    width: 30%;
     height: 40%;
-    align-content: space-between;
-
-    padding-top: 2%;
+    padding-right: 5%;
     position: relative;
-    bottom: 20%;
+    align-content:left;
+    justify-content: center;
     flex-wrap: wrap;
-border:green solid 5px;
+    flex: 1 1 100%;
+    left:20%;
+    bottom: 20%;
+  
+ 
 }
 
 .body-text3 {
-    display:flex;
-    width: 40%;
+    display:inline-flex;
+    width: 30%;
     height: 40%;
     padding-left: 5%;
     position: relative;
-    align-content: right;
+    align-content:center;
     justify-content: center;
     flex-wrap: wrap;
     flex: 1 1  100%;
-    left:63%;
+    left:20%;
     bottom:60%;
-    border:red solid 5px;
+   flex-direction: column;
 }
 
 
@@ -167,42 +171,65 @@ li {
     padding-top: 2%;
 }
 
+.Hori:hover {
+    background-color: #0c0d0e;
+    opacity: 0.7;
+
+}
+
 .prework {
     display: inline-flex;
     max-width: 100%;
     padding-top: 2%;
     border: solid grey 1px;
 }
+.prework:hover
+{
+    background-color:var(--black);
+    opacity: 0.7 ;
 
+}
 .placeholder-1 {
     display: inline-flex;
-    max-width: 73%;
+    max-width: 68%;
+    padding-top: 2%;
     position: relative;
-    left: 40%;
+    right:10%;
     align-content: end;
-border:yellow solid 5px
 }
 
+.placeholder-1:hover {
+    background-color: var(--black);
+    opacity: 0.7;
+
+}
 .placeholder-2 {
    display:inline-flex;
-    max-width: 100%;
+    max-width: 68%;
     position: relative;
-    right: 0%;
+    left:10%;
     align-content: start;
 
 }
+.placeholder-2:hover {
+    background-color: var(--black);
+    opacity: 0.7;
 
+}
 .placeholder-3 {
     display:inline-flex;
-    max-width: 100%;
-    padding-bottom: 1%;
+    max-width: 68%;
     max-height: 100%;
     position: relative;
-    left: 40%;
+    left:8%;
     align-content: end;
-border: green solid 5px
+    
 }
+.placeholder-3:hover {
+    background-color:var(--black);
+    opacity: 0.7;
 
+}
 
 #ContactMe {
     margin-top: 100%;
@@ -219,17 +246,18 @@ border: green solid 5px
         max-height: 10%;
     }
 
-    .prework {}
+    .prework {max-width:120% ;}
 
-    .placeholder-1 {}
+    .placeholder-1 {max-width: 120%;}
 
-    .placeholder-2 {}
+    .placeholder-2 {max-width: 120%;}
 
-    .placeholder-3 {}
-
-
+    .placeholder-3 {max-width:120%}
+    
+    .sidebar{font-size:24px ;}
+nav {background-image: linear-gradient(to right, var(--black) , red);
 }
-
+}
 @media screen and (max-width: 768px) {
     .Hori {
         max-width: 58%;
@@ -239,8 +267,28 @@ border: green solid 5px
         max-width: 6%;
         max-height: 6%;
     }
+.prework {
+    max-width:87%;
 }
 
+.placeholder-1 {
+    max-width: 87%;
+}
+
+.placeholder-2 {
+    max-width: 87%;
+}
+
+.placeholder-3 {
+    max-width: 87%
+}
+
+.sidebar {
+    font-size: 24px;
+}
+nav {background-image: linear-gradient(to right, var(--black), orange);
+}
+}
 @media screen and(max-width: 576px) {
     .Hori {
         max: width 43%;
@@ -250,4 +298,25 @@ border: green solid 5px
         max-width: 4.5%;
         max-height: 4.5%;
     }
+.prework {
+    max-width: 87%;
+}
+
+.placeholder-1 {
+    max-width: 87%;
+}
+
+.placeholder-2 {
+    max-width: 87%;
+}
+
+.placeholder-3 {
+    max-width: 87%
+}
+
+.sidebar {
+    font-size: 16px;
+}
+}
+nav {background-image: linear-gradient(to right, var(--black), green);
 }
